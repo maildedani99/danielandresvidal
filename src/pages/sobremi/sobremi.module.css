@@ -1,0 +1,39 @@
+.__sobremi {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: grey;
+    align-self: center;
+}
+.__sobremi_texto {
+    margin-top: 10%;
+    align-self: center;
+    justify-content: center;
+    object-fit: contain;
+    
+    color: white;
+    padding: 2rem;
+    font-family: 'Antonio', sans-serif;
+    line-height: 1.5;
+}
+@media screen and (min-width: 1020px) 
+{
+    .__sobremi_texto {
+        font-size: 4rem;
+        width: 60%;
+    }
+}
+@media screen and (max-width: 1020px) and (min-width: 800px)
+{
+    .__sobremi_texto {
+        font-size: 3rem;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .__sobremi_texto {
+        font-size: 2.5rem;
+        width: 80%;
+    }
+}

@@ -1,0 +1,64 @@
+.__navbar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+}
+.__navbar_title_link {
+    font-family: 'Antonio', sans-serif;
+    
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    padding: 2rem 1rem;
+}
+.__navbar_menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0 3rem;
+    width: 40%;
+    justify-content: space-around;
+}
+.__navbar_menu_item {
+    color: black;
+    font-family: 'Antonio', sans-serif;
+    
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    align-self: center;
+}
+.__navbar_menu_item:hover {
+    color:rgb(102, 102, 102)
+}
+@media screen and (min-width: 1020px) 
+{
+    .__navbar_title_link{
+        font-size: 2rem;
+    }
+    .__navbar_menu_item {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 1020px) and (min-width: 800px)
+{
+    .__navbar_title_link{
+        font-size: 1.7rem;
+    }
+    .__navbar_menu_item {
+        font-size: 1.1rem;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .__navbar_title_link{
+        font-size: 1.3rem;
+    }
+    .__navbar_menu_item {
+        font-size: 0.8rem;
+        width: 80%;
+    }
+}

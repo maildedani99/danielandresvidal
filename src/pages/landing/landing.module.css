@@ -1,0 +1,9 @@
+.__sobremi_foto_div {
+    width: 50%;
+    align-self: center;
+    padding: 5rem;
+}
+.__sobremi_foto {
+    object-fit: contain;
+    width: 100%;
+}

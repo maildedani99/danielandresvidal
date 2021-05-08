@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 90vh;
   background-color: grey;
 }
 .__escribenos_main {
+  min-height: 80  vh;
   margin-top: 15rem;
   display: flex;
   justify-content: space-around;
@@ -16,9 +16,6 @@
   text-align: center;
   font-family: "Antonio", sans-serif;
 }
-
-.__escribenos_div_form_container {
-}
 .__escribenos_div_form {
   font-family: "Lato", sans-serif;
   padding: 1rem 2rem;
@@ -28,7 +25,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .__escribenos_input_text {
   font-family: "Montserrat", sans-serif;
   background-color: #eee;
@@ -84,7 +80,6 @@
   font-size: 14px;
   padding: 16px;
   outline: none;
-  height: 10rem;
 }
 .__escribenos_input_button {
   text-align: center;

@@ -2,8 +2,9 @@
     width: 50%;
     align-self: center;
     padding: 5rem;
+    margin: 7rem;
 }
 .__sobremi_foto {
     object-fit: contain;
-    width: 100%;
+    width: 70%;
 }

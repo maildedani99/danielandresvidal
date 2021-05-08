@@ -1,0 +1,39 @@
+.__proyectos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 80vh;
+    background-color: grey;
+}
+.__proyectos_title {
+    margin: 10rem;
+    color: white;
+    font-family: 'Antonio', sans-serif;
+    align-self: center;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.__proyectos_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+.__proyecto {
+    display: flex;
+    flex-direction: row;
+    width:40%;
+    align-self: center;
+    justify-items: center;
+    justify-content: center;
+}
+.__proyectos_img {
+    width: 50%;
+    align-self: center;
+}
+.__proyectos_text {
+    font-size: 2rem;
+    color: rgb(161, 161, 161);
+}

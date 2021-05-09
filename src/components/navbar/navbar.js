@@ -9,27 +9,10 @@ const Navbar = () => {
         DANIEL ANDRÉS VIDAL
       </NavLink>
       <div className={styles.__navbar_menu}>
-        <NavLink
-          className={styles.__navbar_menu_item}
-          activeStyle={{ color: "#fe9900" }}
-          to="/sobremi"
-        >
-          SOBRE MÍ
-        </NavLink>
-        <NavLink
-          className={styles.__navbar_menu_item}
-          activeStyle={{ color: "#fe9900" }}
-          to="/servicios"
-        >
-          SERVICIOS
-        </NavLink>
-        <NavLink
-          className={styles.__navbar_menu_item}
-          activeStyle={{ color: "#fe9900" }}
-          to="/proyectos"
-        >
-          PROYECTOS
-        </NavLink>
+        
+        <a className={styles.__navbar_menu_item} href="#sobremi">SOBREMI</a>
+        <a className={styles.__navbar_menu_item} href="#servicios">SERVICIOS</a>
+        <a className={styles.__navbar_menu_item} href="#proyectos">PROYECTOS</a>
         <NavLink
           className={styles.__navbar_menu_item}
           activeStyle={{ color: "#fe9900" }}

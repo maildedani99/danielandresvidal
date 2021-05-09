@@ -4,13 +4,13 @@ import styles from "./sobremi.module.css";
 
 const Sobremi = () => {
   return (
-    <div className={styles.__sobremi}>
+    <div id="sobremi" className={styles.__sobremi}>
           <h3 className={styles.__sobremi_texto}>
-            SOY DESARROLLADOR FULL STACK, ME DEDICO A LA CREACIÓN DE APLIACIONES Y PÁGINAS WEB CON LAS TECNOLOGIAS MÁS ACTUALES COMO REACT.JS, NODE.JS, LARAVEL, GIT Y DOCKER ENTRE OTROS...
+            SOY DESARROLLADOR FULL STACK Y ME DEDICO A LA CREACIÓN DE APLIACIONES Y PÁGINAS WEB. CON LAS TECNOLOGIAS MÁS ACTUALES COMO REACT.JS, NODE.JS, LARAVEL, GIT Y DOCKER ENTRE OTROS...
             <br/>
-            <br/>
+            {/* <br/>
 
-            ME GUSTA EL TRABAJO EN EQUIPO Y LOS RETOS PROFESIONALES.
+            ME GUSTA EL TRABAJO EN EQUIPO Y LOS RETOS PROFESIONALES. */}
           </h3>
     </div>
   );

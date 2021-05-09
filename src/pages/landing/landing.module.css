@@ -1,3 +1,117 @@
+.__landing {
+    scroll-behavior: smooth;
+}
+
+.__navbar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+}
+.__navbar_title_link {
+    font-family: 'Antonio', sans-serif;
+    
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    padding: 2rem 1rem;
+}
+.__navbar_menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0 3rem;
+    width: 40%;
+    justify-content: space-around;
+}
+.__navbar_menu_item {
+    color: black;
+    font-family: 'Antonio', sans-serif;
+    
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    align-self: center;
+}
+.__navbar_menu_item:hover {
+    color:rgb(102, 102, 102)
+}
+.__navbar_menu_item:active {
+color: red!important;
+}
+@media screen and (min-width: 1020px) 
+{
+    .__navbar_title_link{
+        font-size: 2rem;
+    }
+    .__navbar_menu_item {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 1020px) and (min-width: 800px)
+{
+    .__navbar_title_link{
+        font-size: 1.7rem;
+    }
+    .__navbar_menu_item {
+        font-size: 1.1rem;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .__navbar_title_link{
+        font-size: 1.3rem;
+    }
+    .__navbar_menu_item {
+        font-size: 0.8rem;
+        width: 80%;
+    }
+}
+.__sobremi {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: grey;
+    align-self: center;
+}
+.__sobremi_texto {
+    margin-top: 10%;
+    align-self: center;
+    justify-content: center;
+    object-fit: contain;
+    margin-bottom: 5%;
+    
+    color: white;
+    /* padding: 2rem; */
+    font-family: 'Antonio', sans-serif;
+    line-height: 1.5;
+}
+@media screen and (min-width: 1020px) 
+{
+    .__sobremi_texto {
+        font-size: 4rem;
+        width: 60%;
+    }
+}
+@media screen and (max-width: 1020px) and (min-width: 800px)
+{
+    .__sobremi_texto {
+        font-size: 3rem;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .__sobremi_texto {
+        font-size: 2.5rem;
+        width: 80%;
+    }
+}
+
+
+
 .__sobremi_foto_div {
     width: 50%;
     align-self: center;
@@ -7,4 +121,104 @@
 .__sobremi_foto {
     object-fit: contain;
     width: 70%;
+}
+.__servicios {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 80vh;
+}
+.__servicios_texto {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15%;
+    align-self: center;
+    justify-content: space-around;
+    text-align: left;
+    object-fit: contain;
+    color: grey;
+    padding: 2rem;
+    font-family: 'Antonio', sans-serif;
+    line-height: 1.5;
+}
+.__servicios_texto_items{
+
+}
+@media screen and (min-width: 1441px) 
+{
+    .__servicios_texto {
+        font-size: 2.5rem;
+        width: 90%;
+    }
+    .__servicios_texto_item{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 1440px) and (min-width: 1021px)
+{
+    .__servicios_texto {
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .__servicios_texto_items{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 1020px) and (min-width: 800px)
+{
+    .__servicios_texto {
+        font-size: 1.8rem;
+        width: 70%;
+    }
+    .__servicios_texto_items{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .__servicios_texto {
+        font-size: 1.1rem;
+        width: 80%;
+    }
+    .__servicios_texto_items{
+        width: 25%;
+    }
+}
+.__proyectos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: grey;
+}
+.__proyectos_title {
+    margin: 10rem;
+    color: white;
+    font-family: 'Antonio', sans-serif;
+    align-self: center;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.__proyectos_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+.__proyecto {
+    display: flex;
+    flex-direction: row;
+    width:40%;
+    align-self: center;
+    justify-items: center;
+    justify-content: center;
+}
+.__proyectos_img {
+    width: 50%;
+    align-self: center;
+}
+.__proyectos_text {
+    font-size: 2rem;
+    color: rgb(161, 161, 161);
 }

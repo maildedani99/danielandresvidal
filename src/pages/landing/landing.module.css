@@ -1,10 +1,18 @@
 .__sobremi_foto_div {
-    width: 50%;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
     align-self: center;
-    padding: 5rem;
-    margin: 7rem;
+    margin-top: 7rem;
+    justify-content: space-around;
+    
 }
 .__sobremi_foto {
     object-fit: contain;
-    width: 70%;
+    width: 80vh;
+}
+.__sobremi_saludo {
+    font-family: 'Antonio', sans-serif;
+    font-size: 5rem;
+
 }

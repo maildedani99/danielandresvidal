@@ -1,9 +1,9 @@
 .__sobremi {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     min-height: 100vh;
-    background-color: grey;
+    background-color: white;
     align-self: center;
 }
 .__sobremi_texto {
@@ -11,16 +11,20 @@
     align-self: center;
     justify-content: center;
     object-fit: contain;
-    
-    color: white;
+    padding: 3rem;
+    color: black;
     /* padding: 2rem; */
     font-family: 'Antonio', sans-serif;
     line-height: 1.5;
 }
+.__sobremi_foto {
+    object-fit: contain;
+    width: 80vh;
+}
 @media screen and (min-width: 1020px) 
 {
     .__sobremi_texto {
-        font-size: 4rem;
+        font-size: 3rem;
         width: 60%;
     }
 }

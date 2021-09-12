@@ -45,11 +45,21 @@ const Escribenos = () => {
   return (
     <>
       <div className={styles.__escribenos_container}>
-        
         <div className={styles.__escribenos_main}>
           <div className={styles.__escribenos_div_texto}>
             <h2>CONTACTO</h2>
-            <h4>No dudes en contactarme para<br/> cualquier cosa que te parezca</h4>
+            <h4>
+              No dudes en contactarme para
+              <br /> cualquier cosa que te parezca
+            </h4>
+            <br />
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/daniel-andrés-vidal
+"
+            >
+              <h6 className={styles.__redes}>linkedin</h6>
+            </a>
           </div>
           <div className={styles.__escribenos_div_form_container}>
             <form onSubmit={sendEmail}>

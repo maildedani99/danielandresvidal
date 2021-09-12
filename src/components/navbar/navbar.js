@@ -1,42 +1,28 @@
 import React from "react";
 import styles from "./navbar.module.css";
+import daniel from "../../media/daniperfil.png";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className={styles.__navbar}>
-      <NavLink className={styles.__navbar_title_link} to="/">
+      <a className={styles.__navbar_title_link} href="#sobremi">
         DANIEL ANDRÉS VIDAL
-      </NavLink>
+      </a>
+      
       <div className={styles.__navbar_menu}>
-        <NavLink
-          className={styles.__navbar_menu_item}
-          activeStyle={{ color: "#fe9900" }}
-          to="/sobremi"
-        >
+        <a className={styles.__navbar_menu_item} href="#sobremi">
           SOBRE MÍ
-        </NavLink>
-        <NavLink
-          className={styles.__navbar_menu_item}
-          activeStyle={{ color: "#fe9900" }}
-          to="/servicios"
-        >
+        </a>
+        <a className={styles.__navbar_menu_item} href="#servicios">
           SERVICIOS
-        </NavLink>
-        <NavLink
-          className={styles.__navbar_menu_item}
-          activeStyle={{ color: "#fe9900" }}
-          to="/proyectos"
-        >
+        </a>
+        <a className={styles.__navbar_menu_item} href="#proyectos">
           PROYECTOS
-        </NavLink>
-        <NavLink
-          className={styles.__navbar_menu_item}
-          activeStyle={{ color: "#fe9900" }}
-          to="/contacto"
-        >
+        </a>
+        <a className={styles.__navbar_menu_item} href="#contacto">
           CONTACTO
-        </NavLink>
+        </a>
       </div>
     </div>
   );

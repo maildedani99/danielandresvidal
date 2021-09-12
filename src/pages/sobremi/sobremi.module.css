@@ -3,29 +3,36 @@
     flex-direction: row;
     width: 100%;
     min-height: 100vh;
-    background-color: white;
+    margin-top: 5rem;
+    background-color: black;
     align-self: center;
+    justify-content: space-around;
+    
 }
 .__sobremi_texto {
-    margin-top: 10%;
     align-self: center;
     justify-content: center;
     object-fit: contain;
     padding: 3rem;
-    color: black;
+    color: white;
     /* padding: 2rem; */
     font-family: 'Antonio', sans-serif;
     line-height: 1.5;
 }
 .__sobremi_foto {
     object-fit: contain;
-    width: 80vh;
+    width: 25%;
+    justify-content: center;
+    align-self: center;
+    background-color: white;
+    opacity: 0.9;
+
 }
 @media screen and (min-width: 1020px) 
 {
     .__sobremi_texto {
-        font-size: 3rem;
-        width: 60%;
+        font-size: 3.5rem;
+        width: 50%;
     }
 }
 @media screen and (max-width: 1020px) and (min-width: 800px)
@@ -37,7 +44,9 @@
 }
 @media screen and (max-width: 800px) {
     .__sobremi_texto {
-        font-size: 2.5rem;
+        margin-top: 20%;
+        text-align: center;
+        font-size: 2rem;
         width: 80%;
     }
 }

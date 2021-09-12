@@ -17,6 +17,12 @@
   text-align: center;
   font-family: "Antonio", sans-serif;
 }
+.__redes {
+  color: white;
+  text-align: left;
+  text-decoration: underline;
+  font-family: "Lato", sans-serif;
+}
 .__escribenos_div_form {
   font-family: "Lato", sans-serif;
   padding: 1rem 2rem;
@@ -143,13 +149,14 @@
 }
 @media screen and (max-width: 800px) {
   .__escribenos_main {
-    width: 70%;
+    width: 90%;
     flex-direction: row;
+    margin-top: 25%;
   }
   .__escribenos_div_texto {
     font-size: 1.4rem;
-    width: 80%;
-    text-align: left;
+    width: 90%;
+    text-align: center;
     align-self: center;
   }
   .__escribenos_div_texto_items {
@@ -157,5 +164,20 @@
   }
   .__escribenos_main {
     flex-direction: column !important;
+  }
+  .__redes {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Lato", sans-serif;
+  }
+  .__escribenos_div_form {
+    font-family: "Lato", sans-serif;
+    padding: 1rem 2rem;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
   }
 }

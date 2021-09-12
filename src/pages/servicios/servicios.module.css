@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    background-color: black;
+    background-color: white;
 }
 .__servicios_texto {
     display: flex;
@@ -13,14 +13,12 @@
     justify-content: space-around;
     text-align: left;
     object-fit: contain;
-    color: white;
+    color: black;
     padding: 2rem;
     font-family: 'Antonio', sans-serif;
     line-height: 1.5;
 }
-.__servicios_texto_items{
 
-}
 @media screen and (min-width: 1441px) 
 {
     .__servicios_texto {
@@ -52,11 +50,30 @@
     }
 }
 @media screen and (max-width: 800px) {
-    .__servicios_texto {
-        font-size: 1.1rem;
-        width: 80%;
+    .__servicios {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+        background-color: white;
     }
-    .__servicios_texto_items{
-        width: 25%;
+    .__servicios_texto {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30%;
+        font-size: 1.8rem;
+        align-self: center;
+        justify-content: space-around;
+        text-align: left;
+        object-fit: contain;
+        color: black;
+        padding: 2rem;
+        font-family: 'Antonio', sans-serif;
+        line-height: 1.5;
+    }
+    .__servicios_texto_item {
+        margin-bottom: 5rem;
+        text-align:center;
+
     }
 }

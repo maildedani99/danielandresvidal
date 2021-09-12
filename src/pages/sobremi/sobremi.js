@@ -7,15 +7,16 @@ import daniel from "../../media/daniperfil.png";
 const Sobremi = () => {
   return (
     <div className={styles.__sobremi}>
-      <img
+      {/* <img
         className={styles.__sobremi_foto}
         src={daniel}
         alt="Foto Daniel Andrés"
-      />
+      /> */}
       <h3 className={styles.__sobremi_texto}>
-        SOY DESARROLLADOR FULL STACK, ME DEDICO A LA CREACIÓN DE APLIACIONES Y PÁGINAS WEB CON LAS TECNOLOGIAS MÁS ACTUALES COMO REACT.JS, NODE.JS, LARAVEL, GIT Y DOCKER ENTRE OTROS...
-            <br />
-        <br />
+        SOY DESARROLLADOR FULL STACK, Y ME DEDICO A LA CREACIÓN DE APLIACIONES Y PÁGINAS WEB
+       CON LAS TECNOLOGIAS MÁS ACTUALES COMO: <br/> REACT.JS, NODE.JS, LARAVEL, GIT Y DOCKER ENTRE OTRAS...
+            <br/>
+        <br/>
 
             ME GUSTA EL TRABAJO EN EQUIPO Y LOS RETOS PROFESIONALES.
           </h3>

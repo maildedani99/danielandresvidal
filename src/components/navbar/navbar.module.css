@@ -7,13 +7,23 @@
     background-color: white;
     justify-content: space-between;
 }
+
+.__avatar {
+    width: 5%;
+    border-radius: 5rem;
+}
 .__navbar_title_link {
     font-family: 'Antonio', sans-serif;
+    align-self: center;
     
     font-weight: 500;
     text-decoration: none;
     color: black;
     padding: 2rem 1rem;
+}
+.__navbar_perfil {
+    width: 7%;
+    border-radius: 100%;
 }
 .__navbar_menu {
     display: flex;
@@ -52,13 +62,39 @@
         font-size: 1.1rem;
         width: 70%;
     }
+    .__navbar_menu {
+        display: flex;
+        flex-direction: row;
+        margin: 0 3rem;
+        width: 90%;
+        justify-content: space-around;
+    }
 }
 @media screen and (max-width: 800px) {
+    .__navbar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+    }
     .__navbar_title_link{
         font-size: 1.3rem;
     }
+    .__navbar_menu {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-around;
+        margin: auto;
+    }
     .__navbar_menu_item {
         font-size: 0.8rem;
-        width: 80%;
+        width: 90%;
+        justify-content: space-around;
+        justify-items: space-around;
+        margin-bottom: 1rem;
+
     }
 }

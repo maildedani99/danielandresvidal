@@ -12,31 +12,22 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-        <Router>
+    <div>
         <Navbar/>
-      <div>
-        <Switch>
-        <Route exact path="/">
-          <Landing />
-        </Route>
-        <Route exact  path="/sobremi">
+        <div id="sobremi" >
           <Sobremi />
-        </Route>
-        <Route exact path="/servicios">
-          <Servicios />
-        </Route>
-        <Route exact  path="/proyectos">
-          <Proyectos />
-        </Route>
-        <Route exact  path="/servicios">
-          <Servicios />
-        </Route>
-        <Route exact  path="/contacto">
-          <Contacto />
-        </Route>
-        </Switch>
         </div>
-      </Router>
+        <div id="servicios">
+          <Servicios />
+        </div>
+        <div id="proyectos">
+          <Proyectos />
+        </div>
+        
+        <div id="contacto">
+          <Contacto />
+        </div>
+        </div>
   );
 }
 

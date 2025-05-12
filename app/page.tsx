@@ -2,7 +2,6 @@
 export default function HomePage() {
   return (
     <main className="bg-[#0d1117] text-gray-100 px-6 py-20">
-      {/* Hero */}
       <section className="flex flex-col items-center justify-center text-center mb-24">
         <h1 className="text-6xl font-extrabold tracking-tight mb-4">Dani Andrés</h1>
         <p className="text-2xl text-gray-400 mb-8 font-medium">
@@ -30,9 +29,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Content cards */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-        {/* Stack */}
         <div className="bg-[#161B22] rounded-lg p-8 shadow-md hover:shadow-lg transition">
           <h2 className="text-2xl font-semibold mb-4 text-yellow-400">Stack</h2>
           <ul className="list-disc list-inside space-y-2 text-sm text-gray-300">
@@ -44,7 +41,6 @@ export default function HomePage() {
           </ul>
         </div>
 
-        {/* Proyecto */}
         <div className="bg-[#161B22] rounded-lg p-8 shadow-md hover:shadow-lg transition">
           <h2 className="text-2xl font-semibold mb-2 text-yellow-400">Proyecto destacado</h2>
           <h3 className="text-lg font-bold mb-1">Usuriaga.com</h3>
@@ -61,7 +57,6 @@ export default function HomePage() {
           </a>
         </div>
 
-        {/* Experiencia */}
         <div className="bg-[#161B22] rounded-lg p-8 shadow-md hover:shadow-lg transition">
           <h2 className="text-2xl font-semibold mb-4 text-yellow-400">Otras colaboraciones</h2>
           <div className="text-sm text-gray-300 space-y-3">

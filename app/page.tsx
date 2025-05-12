@@ -1,103 +1,83 @@
-import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="bg-[#0d1117] text-gray-100 px-6 py-20">
+      {/* Hero */}
+      <section className="flex flex-col items-center justify-center text-center mb-24">
+        <h1 className="text-6xl font-extrabold tracking-tight mb-4">Dani Andrés</h1>
+        <p className="text-2xl text-gray-400 mb-8 font-medium">
+          Full‑Stack Developer · React · Next.js · Laravel · Docker
+        </p>
+        <p className="max-w-3xl text-gray-200 text-xl md:text-xl leading-relaxed mb-12 py-14">
+          Desarrollador Full‑Stack con fuerte enfoque en frontend. Apasionado por la arquitectura limpia, el rendimiento y la experiencia de usuario. Actualmente lidero el desarrollo de una plataforma SaaS multi-tenant para e-commerce, basada en Laravel y Next.js. Siempre abierto a nuevos retos donde pueda aportar valor con código claro, escalable y centrado en el usuario.
+        </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        <div className="flex flex-col sm:flex-row gap-4">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:andresvidaldaniel@gmail.com"
+            className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-full text-lg hover:bg-yellow-400 hover:text-[#0d1117] transition font-medium text-center"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            Contacto
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            className="bg-yellow-400 text-[#0d1117] px-8 py-3 rounded-full text-lg font-semibold hover:bg-yellow-300 transition"
+            href="/CV_Dani_Andres_FullStack_Dev_Visual_v2.pdf"
+            download
           >
-            Read our docs
+            Descargar CV
+          </a>
+       
+        </div>
+      </section>
+
+      {/* Content cards */}
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+        {/* Stack */}
+        <div className="bg-[#161B22] rounded-lg p-8 shadow-md hover:shadow-lg transition">
+          <h2 className="text-2xl font-semibold mb-4 text-yellow-400">Stack</h2>
+          <ul className="list-disc list-inside space-y-2 text-sm text-gray-300">
+            <li>React / Next.js / RemixJS</li>
+            <li>Laravel 8/10 / MySQL / Prisma</li>
+            <li>Tailwind CSS / Storybook</li>
+            <li>Docker / Git</li>
+            <li>Arquitectura multi-tenant / JWT Auth</li>
+          </ul>
+        </div>
+
+        {/* Proyecto */}
+        <div className="bg-[#161B22] rounded-lg p-8 shadow-md hover:shadow-lg transition">
+          <h2 className="text-2xl font-semibold mb-2 text-yellow-400">Proyecto destacado</h2>
+          <h3 className="text-lg font-bold mb-1">Usuriaga.com</h3>
+          <p className="text-sm text-gray-300 mb-2">
+            E-commerce de moda con arquitectura multi-tenant, refactorizado en 2023 a SaaS. Next.js (front) + Laravel 8 (back) + Docker. Pasarela de pago Redsys.
+          </p>
+          <a
+            href="https://usuriaga.com"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block text-yellow-400 underline hover:opacity-80"
+          >
+            Ver demo →
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        {/* Experiencia */}
+        <div className="bg-[#161B22] rounded-lg p-8 shadow-md hover:shadow-lg transition">
+          <h2 className="text-2xl font-semibold mb-4 text-yellow-400">Otras colaboraciones</h2>
+          <div className="text-sm text-gray-300 space-y-3">
+            <div>
+              <p className="font-semibold">Grupo Mayo (2023)</p>
+              <p>Desarrollo de módulos de formación con React.js. Maquetación responsive con Tailwind CSS.</p>
+            </div>
+            <div>
+              <p className="font-semibold">Labelgrup (2021)</p>
+              <p>App web para el sector farmacéutico. Componentes reutilizables con Storybook y diseño responsive.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
   );
 }

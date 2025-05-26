@@ -1,3 +1,5 @@
+import * as React from "react";
+
 import "./globals.css";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
@@ -11,15 +13,15 @@ export const metadata: Metadata = {
   keywords: ["Full-Stack", "React", "Next.js", "Laravel", "Frontend", "Developer"],
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children, modal }: { children: React.ReactNode; modal: React.ReactNode }) {
   return (
     <html lang="es">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-
       <body className={`${inter.className} bg-[#0d1117] text-gray-100 min-h-screen flex flex-col`}>
         <main className="flex-grow">{children}</main>
+        {modal}
         <footer className="bg-[#0d1117] text-gray-400 text-sm text-center py-16">
           <div className="space-y-2">
             <p>Email: <a href="mailto:andresvidaldaniel@gmail.com" className="underline">andresvidaldaniel@gmail.com</a></p>

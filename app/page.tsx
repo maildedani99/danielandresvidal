@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -12,12 +13,12 @@ export default function HomePage() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
-          <a
-            href="mailto:andresvidaldaniel@gmail.com"
+          <Link
+            href="/contact"
             className="border border-yellow-400 text-yellow-400 px-8 py-3 rounded-full text-lg hover:bg-yellow-400 hover:text-[#0d1117] transition font-medium text-center"
           >
             Contacto
-          </a>
+          </Link>
           <a
             className="bg-yellow-400 text-[#0d1117] px-8 py-3 rounded-full text-lg font-semibold hover:bg-yellow-300 transition"
             href="/CV_Dani_Andres_FullStack_Dev_Visual_v2.pdf"

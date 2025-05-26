@@ -81,6 +81,7 @@ export default function ContactFormModal() {
 
                 <button
                   type="button"
+                   disabled={status === "loading"}
                   onClick={() => router.back()}
                   className="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-6 rounded-full transition"
                 >

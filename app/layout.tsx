@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Dani Andrés – Full-Stack Developer",
   description: "Portfolio de Dani Andrés, desarrollador Full-Stack especializado en frontend con React y Next.js.",
-  authors: [{ name: "Dani Andrés", url: "https://danielandresvidal.com" }],
+  authors: [{ name: "Dani Andrés", url: "https://danielandresvidal.vercel.app/" }],
   keywords: ["Full-Stack", "React", "Next.js", "Laravel", "Frontend", "Developer"],
 };
 
